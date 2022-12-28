@@ -1,0 +1,178 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+:root {
+    /* Primary  */
+    --bright-orange: hsl(31, 77%, 52%); 
+    --dark-cyan: hsl(184, 100%, 22%); 
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    
+    /* Neutral */
+    --transparent-white: hsla(0, 0%, 100%, 0.75); 
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375rem;
+    background: var(--very-light-gray);
+    color: var(--transparent-white);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.wrapper {
+    padding: 5rem 0;
+}
+
+.box {
+    max-width: 20.5rem;
+    padding: 2.875rem 3rem;
+}
+
+    .box h1 {
+        margin: 2.25rem 0;
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    .box p {
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+    }
+
+.box-first {
+    background: var(--bright-orange);
+}
+
+.box-second {
+    background: var(--dark-cyan);
+}
+
+.box-third {
+    background: var(--very-dark-cyan);
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0.9rem 2.4375rem;
+    background: var(--very-light-gray);
+    border-radius: 2rem;
+    border: 1px solid var(--very-light-gray);
+}
+
+.btn-first {
+    color: var(--bright-orange);
+}
+
+.btn-second {
+    color: var(--dark-cyan);
+}
+
+.btn-third {
+    color: var(--very-dark-cyan);
+}
+
+.btn-first:hover,
+.btn-second:hover,
+.btn-third:hover {
+    color: var(--very-light-gray);
+    background: transparent;
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    color: var(--very-dark-cyan);
+}
+
+.attribution a {
+    color: var(--dark-cyan);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 920px){
+    body {
+        justify-content: center;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    .box {
+        max-width: 19.17rem;
+    }
+
+    .box p {
+        margin-bottom: 5rem;
+    }
+    
+    .attribution {
+        font-size: 14px;
+    }
+}
