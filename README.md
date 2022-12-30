@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/3column-preview-card-component-y-bOZWgW9y)
 - [Live Site URL](https://github.com/elidrc/3-column-preview-card-component)
 
 ## My process
